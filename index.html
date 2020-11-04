@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>常用终端命令</title>
+  <style>
+body {background-color:#b0c4de;}
+      .banner{
+       height:40px;
+       text-align:center;
+
+       background-color:red;
+      }
+      .top{
+        color:black;
+       height:30px;
+     } 
+      .center{
+background-color:green;
+       color:white;
+       height:1000px;
+       }
+
+   #bottom{
+height:1000px;
+       text-align:center;
+
+       background-color:#d0e4fe;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="./index.js"></script>
+
+</head>
+<body>
+  <div class="banner">
+   <h4>终端的使用</h4>
+</div>
+  <div class="top">
+   
+    <h2>Linux常用命令的使用</h2>
+   
+</div>
+
+  <div class = "center">
+     
+  <h3>ls</h3>
+  <h3>cat</h3>
+  <h3>pwd</h3>
+  <h3>find</h3>
+  <h3>chmod</h3>
+  <h3>mkdir</h3>
+  <h3>cd</h3>
+  <h3>cp</h3>
+  <h3>mount</h3>
+  <h3>tree</h3>
+  <h3>tail</h3>
+  <button>jQuery测试</button>
+  <button class="hide">class选择器 隐藏</button>
+  <button id="show">id选择器 展示</button>
+ 
+<h2>
+   <h5>linux服务器的操作</h5>    
+     
+    <h5> ngnix的使用细节
+       正向代理和反向代理  正向代理就是客户端代理 
+       路径的配置</h5>
+       
+       内网穿透  
+    
+  <p> docker使用常见命令</p>
+
+  
+   <p>
+   kubernetes(k8s)的原理分析
+   k8s是docker集群的管理工具
+   k8s的核心功能，自愈重新启动失败的容器，在节点不可用时，替换和重新调度节点上的容器，对用户定义的健康检查不响应的容器会被中止，并且在容器准备好服务之前不会把其向客户端广播。
+   弹性伸缩: 通过监控容器的cpu的负载值,如果这个平均高于80%,增加容器的数量,如果这个平均低于10%,减少容器的数量
+   服务的自动发现和负载均衡: 不需要修改您的应用程序来使用不熟悉的服务发现机制，Kubernetes 为容器提供了自己的 IP 地址和一组容器的单个 DNS 名称，并可以在它们之间进行负载均衡。
+   滚动升级和一键回滚: Kubernetes 逐渐部署对应用程序或其配置的更改，同时监视应用程序运行状况，以确保它不会同时终止所有实例。 如果出现问题，Kubernetes会为您恢复更改，利用日益增长的部署解决方案的生态系统。
+  </p>
+
+<p> 前端常用工具库</p>
+<p> python的web开发</p>
+       
+</h2>
+</div>
+
+<div id="bottom">
+</div>
+
+
+
+<script>
+  
+  // $(function(){
+
+      
+  // });
+
+  // window.onload = function(){
+       
+     
+   
+  // };
+
+  $(document).ready(function(){
+
+    // $("button").click(function(){
+    //   $("p").hide();
+    //   console.log("jquery执行到此");
+    // });
+
+     $(".hide").click(function(){
+  
+        $("p").hide();
+        console.log("隐藏p标签")
+        prompt('答案',"hahah");
+    });
+    $("#show").click(function(){
+         
+         $("p").show();
+         console.log("展示p标签")
+         alert('展示p标签');
+    });
+
+    //JavaScript函数的使用
+    function hqg(){
+      this.name = "洪七公";
+
+    }
+    hqg.prototype.skill = "降龙十八掌";
+
+    const gj = new hqg();
+
+    console.log(gj.skill);
+    console.log(hqg.prototype);
+    console.log(gj.prompt);
+    console.log(gj.prototype);
+    console.log('继承');
+
+    //----- 箭头函数
+    function A(a){
+      console.log(arguments);
+    }
+
+    var B = (b)=>{
+      console.log(arguments);
+    }
+
+    A(2);
+    B(3);
+    //vue框架的使用
+ 
+
+  });
+
+</script>
+ 
+
+</body>
+</html>
