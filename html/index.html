@@ -5,19 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>常用终端命令</title>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
   <style>
 body {background-color:#b0c4de;}
-      .banner{
+      #banner{
+       
        height:40px;
+       
+       
        text-align:center;
 
        background-color:red;
+      }
+      #message{
+        height: 40px;
+        float:right;
+        background-color: orange;
       }
       .top{
         color:black;
        height:30px;
      } 
-      .center{
+      #center{
 background-color:green;
        color:white;
        height:1000px;
@@ -29,33 +38,49 @@ height:1000px;
 
        background-color:#d0e4fe;
 }
+
+ .out {
+     border: 10px solid orange;
+     min-height: 45px;
+     float: right;
+ }
+
+ .in{
+   background: orchid;
+   height: 120px;
+   width: 200px;
+   position: absolute;
+ }
 </style>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
 <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
 
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 
 <script src="./index.js"></script>
 
 </head>
 <body>
-  <div class="banner">
-   <h4>终端的使用</h4>
+  <div class="animated  fadeInRightBig delay-3s" id="banner">
+   终端的使用
 </div>
+
+  <div class="animated infinite swing " id="message" style="font-size: 10px;text-align: center;">最新消息</div>
   <div class="top">
    
     <h2>Linux常用命令的使用</h2>
    
 </div>
 
-  <div class = "center">
+  <div class = "animated fadeIn delay-3s" id="center">
      
   <h3>ls</h3>
   <h3>cat</h3>
@@ -100,6 +125,10 @@ height:1000px;
 </div>
 
 <div id="bottom">
+
+    
+
+
 </div>
 
 

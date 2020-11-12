@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>BFC练习</title>
+
+    <style>
+        body {background-color:#b0c4de;}
+.title {
+    text-align: center;
+    background: chartreuse;
+    height: 40px;
+    font-size: 20px;
+}
+.out {
+    margin-top: 40px;
+     border: 10px solid orange;
+     min-height: 45px;
+     overflow: hidden;
+ }
+
+ .in{
+   background: orchid;
+   height: 120px;
+   float: left;
+   width: 200px;
+   border: 5px solid rgb(233, 250, 84);
+   /* display: flow-root; */
+   /* width: 200px; */
+   /* position: absolute; */
+ }
+
+ .left{
+     min-width: 200px;
+     margin-top: 30px;
+     background: coral;
+     margin-right: 220px;
+     height: 50px;
+     float: left;
+ }
+
+ .right{
+
+     margin-top: 30px;
+     border-color: blue;
+     background: black;
+     height: 50px;
+     display: flow-root;
+      
+ }
+ .top {
+     margin-top: 40px;
+        border: 5px solid red;
+        width: 300px;
+        /* 常用overflow 和  float*/
+        /* overflow: hidden; */
+        /* display: flow-root; */   
+        /* display: inline-block */
+        /* position: fixed; */
+        float: left;
+    }
+    
+    .child {
+        border: 5px solid rgb(233, 250, 84);
+        width:100px;
+        height: 100px;
+        float: left;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="title"> 关于BFC的理解</div>
+    <div class="out">
+
+        <div class="in"></div>
+        <div class="in"></div>
+      
+     </div>
+
+
+     <div class="left"></div>
+     <div class="right"></div>
+
+
+     <div class="top">
+
+         <div class="child"></div>
+         <div class="child"></div>
+     </div>
+
+</body>
+
+</html>
